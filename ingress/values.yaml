@@ -1,0 +1,2 @@
+# Ingress configuration - HTTPProxy manifests are static
+# No values needed as they reference service names directly

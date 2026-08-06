@@ -1,0 +1,31 @@
+namespace: hiring-system
+serviceAccountName: artifact-registry-sa
+registry: asia-south1-docker.pkg.dev
+projectId: wohlig
+repository: hiring-system
+
+service:
+  name: interview-service
+  imageTag: dev
+  port: 3001
+  replicas: 1
+
+resources:
+  requests:
+    memory: "128Mi"
+    cpu: "50m"
+  limits:
+    memory: "256Mi"
+    cpu: "100m"
+
+secretName: interview-service-secret
+
+config:
+  PORT: "3001"
+  FRONTEND_URL: "https://hiring-candidate-portal.wohlig.com"
+  JWT_ISSUER: "https://identity.wohlig.com"
+  INTERVIEW_MODEL: "projects/465203017930/locations/us-central1/publishers/google/models/gemini-live-2.5-flash"
+  NOTIFICATION_URL: "http://notification-service"
+  PROCTORING_URL: "http://proctoring-service"
+  WORKFLOW_URL: "http://workflow-engine"
+  SEED_DATABASE_URL: "postgres://postgres:postgres@localhost:55432/postgres"

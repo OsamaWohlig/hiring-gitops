@@ -1,0 +1,27 @@
+namespace: hiring-system
+serviceAccountName: artifact-registry-sa
+registry: asia-south1-docker.pkg.dev
+projectId: wohlig
+repository: hiring-system
+
+service:
+  name: platform-service
+  imageTag: dev
+  port: 4007
+  replicas: 1
+
+resources:
+  requests:
+    memory: "128Mi"
+    cpu: "50m"
+  limits:
+    memory: "256Mi"
+    cpu: "100m"
+
+secretName: platform-service-secret
+
+config:
+  PORT: "4007"
+  PLATFORM_JWT_ISSUER: "https://platform.wohlig.com"
+  SUPERADMIN_FRONTEND_URL: "https://hiring-superadmin-console.wohlig.com"
+  SEED_DATABASE_URL: "postgres://postgres:postgres@localhost:55432/postgres"

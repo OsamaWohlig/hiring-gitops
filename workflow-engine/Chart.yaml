@@ -1,0 +1,6 @@
+apiVersion: v2
+name: workflow-engine
+description: Hiring System - workflow-engine
+type: application
+version: 1.0.0
+appVersion: "1.0.0"

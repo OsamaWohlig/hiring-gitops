@@ -1,0 +1,33 @@
+apiVersion: projectcontour.io/v1
+kind: HTTPProxy
+metadata:
+  name: superadmin-console
+  namespace: hiring-system
+spec:
+  routes:
+    - loadBalancerPolicy:
+        strategy: WeightedLeastRequest
+      services:
+        - name: superadmin-console
+          port: 80
+      timeoutPolicy:
+        idle: infinity
+  virtualhost:
+    corsPolicy:
+      allowCredentials: true
+      allowHeaders:
+        - '*'
+      allowMethods:
+        - GET
+        - POST
+        - OPTIONS
+        - PUT
+        - DELETE
+        - PATCH
+      allowOrigin:
+        - '*'
+      exposeHeaders:
+        - Content-Length
+        - Content-Range
+      maxAge: 10m
+    fqdn: hiring-superadmin-console.wohlig.com

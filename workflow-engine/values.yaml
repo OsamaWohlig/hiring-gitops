@@ -1,0 +1,28 @@
+namespace: hiring-system
+serviceAccountName: artifact-registry-sa
+registry: asia-south1-docker.pkg.dev
+projectId: wohlig
+repository: hiring-system
+
+service:
+  name: workflow-engine
+  imageTag: dev
+  port: 4002
+  replicas: 1
+
+resources:
+  requests:
+    memory: "128Mi"
+    cpu: "50m"
+  limits:
+    memory: "256Mi"
+    cpu: "100m"
+
+secretName: workflow-engine-secret
+
+config:
+  PORT: "4002"
+  JWT_ISSUER: "https://identity.wohlig.com"
+  ASSESSMENT_URL: "http://assessment-service"
+  NOTIFICATION_URL: "http://notification-service"
+  INTERVIEW_URL: "http://interview-service"

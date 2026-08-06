@@ -1,0 +1,33 @@
+apiVersion: projectcontour.io/v1
+kind: HTTPProxy
+metadata:
+  name: gateway
+  namespace: hiring-system
+spec:
+  routes:
+    - loadBalancerPolicy:
+        strategy: WeightedLeastRequest
+      services:
+        - name: gateway
+          port: 80
+      timeoutPolicy:
+        idle: infinity
+  virtualhost:
+    corsPolicy:
+      allowCredentials: true
+      allowHeaders:
+        - '*'
+      allowMethods:
+        - GET
+        - POST
+        - OPTIONS
+        - PUT
+        - DELETE
+        - PATCH
+      allowOrigin:
+        - '*'
+      exposeHeaders:
+        - Content-Length
+        - Content-Range
+      maxAge: 10m
+    fqdn: hiring-gateway.wohlig.com
