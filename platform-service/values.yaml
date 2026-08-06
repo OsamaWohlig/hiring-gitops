@@ -6,7 +6,7 @@ repository: hiring-system
 
 service:
   name: platform-service
-  imageTag: dev
+  imageTag: b97f9e7a7fa29cecded4c0509a8f1793a2fbee19
   port: 4007
   replicas: 1
 
