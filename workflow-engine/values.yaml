@@ -30,7 +30,7 @@ config:
 # Ingress configuration
 ingress:
   enabled: true
-  fqdn: hiring-workflow.wohlig.com
+  fqdn: hiring-workflow-engine.wohlig.com
   tls:
     enabled: false
     secretName: ""
