@@ -32,3 +32,11 @@ config:
   GUPSHUP_SOURCE_NUMBER: "+917834811114"
   GUPSHUP_APP_NAME: "HiringSystem"
   SEED_DATABASE_URL: "postgres://postgres:postgres@localhost:55432/postgres"
+
+# Ingress configuration
+ingress:
+  enabled: true
+  fqdn: hiring-notification.wohlig.com
+  tls:
+    enabled: false
+    secretName: ""

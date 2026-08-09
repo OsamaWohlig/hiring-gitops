@@ -24,3 +24,11 @@ config:
   PORT: "4006"
   JWT_ISSUER: "https://identity.wohlig.com"
   SEED_DATABASE_URL: "postgres://postgres:postgres@localhost:55432/postgres"
+
+# Ingress configuration
+ingress:
+  enabled: true
+  fqdn: hiring-proctoring.wohlig.com
+  tls:
+    enabled: false
+    secretName: ""

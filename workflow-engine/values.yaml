@@ -26,3 +26,11 @@ config:
   ASSESSMENT_URL: "http://assessment-service"
   NOTIFICATION_URL: "http://notification-service"
   INTERVIEW_URL: "http://interview-service"
+
+# Ingress configuration
+ingress:
+  enabled: true
+  fqdn: hiring-workflow.wohlig.com
+  tls:
+    enabled: false
+    secretName: ""

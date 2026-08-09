@@ -25,3 +25,11 @@ config:
   JWT_ISSUER: "https://identity.wohlig.com"
   JWT_ACCESS_TOKEN_TTL_SECONDS: "900"
   FRONTEND_URLS: "https://hiring-candidate-portal.wohlig.com,https://hiring-recruiter-portal.wohlig.com,https://hiring-admin-console.wohlig.com"
+
+# Ingress configuration
+ingress:
+  enabled: true
+  fqdn: hiring-identity.wohlig.com
+  tls:
+    enabled: false
+    secretName: ""

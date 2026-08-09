@@ -36,3 +36,11 @@ config:
   PLATFORM_JWT_ISSUER: "https://platform.wohlig.com"
   RATE_LIMIT_WINDOW_MS: "60000"
   RATE_LIMIT_MAX: "100"
+
+# Ingress configuration
+ingress:
+  enabled: true
+  fqdn: hiring-gateway.wohlig.com
+  tls:
+    enabled: false
+    secretName: ""

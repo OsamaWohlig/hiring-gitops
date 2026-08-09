@@ -29,3 +29,11 @@ config:
   PROCTORING_URL: "http://proctoring-service"
   WORKFLOW_URL: "http://workflow-engine"
   SEED_DATABASE_URL: "postgres://postgres:postgres@localhost:55432/postgres"
+
+# Ingress configuration
+ingress:
+  enabled: true
+  fqdn: hiring-interview.wohlig.com
+  tls:
+    enabled: false
+    secretName: ""

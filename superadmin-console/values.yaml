@@ -17,3 +17,11 @@ resources:
   limits:
     memory: "256Mi"
     cpu: "100m"
+
+# Ingress configuration
+ingress:
+  enabled: true
+  fqdn: hiring-superadmin-console.wohlig.com
+  tls:
+    enabled: false
+    secretName: ""

@@ -17,3 +17,11 @@ resources:
   limits:
     memory: "256Mi"
     cpu: "100m"
+
+# Ingress configuration
+ingress:
+  enabled: true
+  fqdn: hiring-candidate-portal.wohlig.com
+  tls:
+    enabled: false
+    secretName: ""

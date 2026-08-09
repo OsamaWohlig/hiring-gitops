@@ -28,3 +28,11 @@ config:
   NOTIFICATION_URL: "http://notification-service"
   SEED_DATABASE_URL: "postgres://postgres:postgres@localhost:55432/postgres"
   LLM_PROVIDER: "gemini"
+
+# Ingress configuration
+ingress:
+  enabled: true
+  fqdn: hiring-assessment.wohlig.com
+  tls:
+    enabled: false
+    secretName: ""

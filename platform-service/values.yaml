@@ -25,3 +25,11 @@ config:
   PLATFORM_JWT_ISSUER: "https://platform.wohlig.com"
   SUPERADMIN_FRONTEND_URL: "https://hiring-superadmin-console.wohlig.com"
   SEED_DATABASE_URL: "postgres://postgres:postgres@localhost:55432/postgres"
+
+# Ingress configuration
+ingress:
+  enabled: true
+  fqdn: hiring-platform.wohlig.com
+  tls:
+    enabled: false
+    secretName: ""
