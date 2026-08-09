@@ -1,5 +1,5 @@
 namespace: hiring-system
-serviceAccountName: artifact-registry-sa
+serviceAccountName: default
 registry: asia-south1-docker.pkg.dev
 projectId: wohlig
 repository: hiring-system
