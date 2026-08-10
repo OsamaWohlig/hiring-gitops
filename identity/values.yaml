@@ -6,7 +6,7 @@ repository: hiring-system
 
 service:
   name: identity
-  imageTag: b97f9e7a7fa29cecded4c0509a8f1793a2fbee19
+  imageTag: 3b2e92c8725bef39665b653ffa77ea33e7801627
   port: 4001
   replicas: 1
 
