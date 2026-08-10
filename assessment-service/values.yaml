@@ -6,7 +6,7 @@ repository: hiring-system
 
 service:
   name: assessment-service
-  imageTag: 5e300f59d96157c6d53e0fac5c02e0e633d4522f
+  imageTag: c67e43e62a92117136902ac60d9e619d1d6461c9
   port: 4003
   replicas: 1
 
