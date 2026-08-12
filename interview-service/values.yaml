@@ -33,7 +33,7 @@ config:
 # Ingress configuration
 ingress:
   enabled: true
-  fqdn: hiring-interview.wohlig.com
+  fqdn: hiring-interview-service.wohlig.com
   tls:
     enabled: false
     secretName: ""
