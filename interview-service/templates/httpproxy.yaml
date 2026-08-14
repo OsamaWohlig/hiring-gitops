@@ -13,6 +13,7 @@ spec:
           port: 80
       timeoutPolicy:
         idle: infinity
+      enableWebsockets: true
   virtualhost:
     corsPolicy:
       allowCredentials: true
