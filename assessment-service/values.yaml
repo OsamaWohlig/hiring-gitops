@@ -24,6 +24,7 @@ config:
   PORT: "4003"
   JWT_ISSUER: "https://identity.wohlig.com"
   CANDIDATE_PORTAL_URL: "https://hiring-candidate-portal.wohlig.com"
+  GOOGLE_GENAI_USE_VERTEXAI: "false"
   WORKFLOW_URL: "http://workflow-engine"
   NOTIFICATION_URL: "http://notification-service"
   SEED_DATABASE_URL: "postgres://postgres:postgres@localhost:55432/postgres"
