@@ -24,7 +24,7 @@ config:
   PORT: "4005"
   JWT_ISSUER: "https://identity.wohlig.com"
   NOTIFICATION_PROVIDER: "smtp"
-  NOTIFICATION_FROM: "ltcekk26@gmail.com"
+  NOTIFICATION_FROM: "hr-automation@wohlig.com"
   SMTP_HOST: "smtp.gmail.com"
   SMTP_PORT: "587"
   SMTP_SECURE: "false"
@@ -32,7 +32,7 @@ config:
   GUPSHUP_SOURCE_NUMBER: "+917834811114"
   GUPSHUP_APP_NAME: "HiringSystem"
   SEED_DATABASE_URL: "postgres://postgres:postgres@localhost:55432/postgres"
-  NOTIFICATION_FROM: "hr-automation@wohlig.com"
+  SMTP_USER: "hr-automation@wohlig.com"
 
 # Ingress configuration
 ingress:
