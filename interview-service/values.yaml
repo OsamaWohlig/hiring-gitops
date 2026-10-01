@@ -24,12 +24,16 @@ config:
   PORT: "3001"
   FRONTEND_URL: "https://hiring-candidate-portal.wohlig.com"
   JWT_ISSUER: "https://identity.wohlig.com"
-  INTERVIEW_MODEL: "gemini-3.1-flash-live-preview"
-  GOOGLE_GENAI_USE_VERTEXAI: "false"
+  INTERVIEW_MODEL: "gemini-3.8-live"
+  GOOGLE_GENAI_USE_VERTEXAI: "true"
   NOTIFICATION_URL: "http://notification-service"
   PROCTORING_URL: "http://proctoring-service"
   WORKFLOW_URL: "http://workflow-engine"
   SEED_DATABASE_URL: "postgres://postgres:postgres@localhost:55432/postgres"
+  GOOGLE_CLOUD_PROJECT: "wohlig"
+  GOOGLE_CLOUD_LOCATION: "global"
+  GOOGLE_CLOUD_LIVE_LOCATION: "us-central1"
+  
 
 # Ingress configuration
 ingress:
