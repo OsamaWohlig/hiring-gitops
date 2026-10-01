@@ -25,10 +25,12 @@ config:
   JWT_ISSUER: "https://identity.wohlig.com"
   CANDIDATE_PORTAL_URL: "https://hiring-candidate-portal.wohlig.com"
   WORKFLOW_URL: "http://workflow-engine"
-  GOOGLE_GENAI_USE_VERTEXAI: "false"
+  GOOGLE_GENAI_USE_VERTEXAI: "true"
   NOTIFICATION_URL: "http://notification-service"
   SEED_DATABASE_URL: "postgres://postgres:postgres@localhost:55432/postgres"
   LLM_PROVIDER: "gemini"
+  GOOGLE_CLOUD_PROJECT: "wohlig"
+  GOOGLE_CLOUD_LOCATION: "global"
 
 # Ingress configuration
 ingress:
