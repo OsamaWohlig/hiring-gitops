@@ -6,7 +6,7 @@ repository: hiring-system
 
 service:
   name: admin-console
-  imageTag: 70ea0fa8a1d3851a231f019b6ec720219be36d8a
+  imageTag: 72ea62a498567e58c89979c61b6b567a64e2c1ee
   port: 8080
   replicas: 1
 
