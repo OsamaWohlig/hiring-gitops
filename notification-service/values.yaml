@@ -28,7 +28,7 @@ config:
   SMTP_HOST: "smtp.gmail.com"
   SMTP_PORT: "587"
   SMTP_SECURE: "false"
-  WHATSAPP_PROVIDER: "gupshup"
+  WHATSAPP_PROVIDER: "console"
   GUPSHUP_SOURCE_NUMBER: "+917834811114"
   GUPSHUP_APP_NAME: "HiringSystem"
   SEED_DATABASE_URL: "postgres://postgres:postgres@localhost:55432/postgres"

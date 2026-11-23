@@ -33,6 +33,11 @@ config:
   GOOGLE_CLOUD_PROJECT: "wohlig"
   GOOGLE_CLOUD_LOCATION: "global"
   GOOGLE_CLOUD_LIVE_LOCATION: "us-central1"
+  HIRING_ALERT_EMAIL: "shreya.dandare@wohlig.com"
+  RECRUITER_PORTAL_URL: "https://hiring-recruiter-portal.wohlig.com"
+  CALENDAR_PROVIDER: "google"
+  CALENDAR_GOOGLE_DOMAINS: "wohlig.com"
+  CALENDAR_ORGANIZER_EMAIL: "priyal.makwana@wohlig.com"
   
 
 # Ingress configuration

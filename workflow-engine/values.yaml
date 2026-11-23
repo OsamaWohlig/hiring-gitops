@@ -23,9 +23,13 @@ secretName: workflow-engine-secret
 config:
   PORT: "4002"
   JWT_ISSUER: "https://identity.wohlig.com"
-  ASSESSMENT_URL: "http://assessment-service"
-  NOTIFICATION_URL: "http://notification-service"
-  INTERVIEW_URL: "http://interview-service"
+  ASSESSMENT_SERVICE_URL: "http://assessment-service"
+  NOTIFICATION_SERVICE_URL: "http://notification-service"
+  INTERVIEW_SERVICE_URL: "http://interview-service"
+  FRONTEND_URL: "https://hiring-candidate-portal.wohlig.com"
+  RECRUITER_PORTAL_URL: "https://hiring-recruiter-portal.wohlig.com"
+  HIRING_ALERT_EMAIL: "shreya.dandare@wohlig.com"
+  CALENDAR_ORGANIZER_EMAIL: "priyal.makwana@wohlig.com"
 
 # Ingress configuration
 ingress:
