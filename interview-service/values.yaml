@@ -6,7 +6,7 @@ repository: hiring-system
 
 service:
   name: interview-service
-  imageTag: 684d855609ef36d470e8f8e11692a5f67e86c0a1
+  imageTag: 629a7547de27f5af358d8e67bee2928f758a07ed
   port: 3001
   replicas: 1
 
