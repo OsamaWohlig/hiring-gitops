@@ -6,7 +6,7 @@ repository: hiring-system
 
 service:
   name: gateway
-  imageTag: 72ea62a498567e58c89979c61b6b567a64e2c1ee
+  imageTag: d8f86549e33b2a842602fb0ef0e733ee35bfef8f
   port: 4000
   replicas: 1
 
