@@ -6,7 +6,7 @@ repository: hiring-system
 
 service:
   name: proctoring-service
-  imageTag: d8f86549e33b2a842602fb0ef0e733ee35bfef8f
+  imageTag: 923542e829599f1fa4890f6954e7ac40492d58f1
   port: 4006
   replicas: 1
 

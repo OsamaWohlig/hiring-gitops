@@ -6,7 +6,7 @@ repository: hiring-system
 
 service:
   name: notification-service
-  imageTag: 27798193aa7d67240940d45a97053f32bf652057
+  imageTag: 923542e829599f1fa4890f6954e7ac40492d58f1
   port: 4005
   replicas: 1
 
