@@ -6,7 +6,7 @@ repository: hiring-system
 
 service:
   name: candidate-portal
-  imageTag: dcdffe29cbe62cae0847a2a507062af95807ad0f
+  imageTag: 703465b0089ed169a2643e4814e6a5336dcf1f61
   port: 8080
   replicas: 1
 
