@@ -6,7 +6,7 @@ repository: hiring-system
 
 service:
   name: workflow-engine
-  imageTag: dcecd25cce0f06ebef297145fc5b0d299a440c37
+  imageTag: cb1fd832234cc063c64e82995005ea04838e81db
   port: 4002
   replicas: 1
 
